@@ -49,3 +49,27 @@ https://code.visualstudio.com/download
     alert(b);
     ```
 - 변수의 type은 만들때 한번만 사용한다.
+
+### Step 3. More Variable. let, const, var (더 다양한 변수들)
+- const : constant. means stable, not change.
+    ``` js
+    const a = 112;
+    let b = a - 5;
+    a = 10; // Uncaught TypeError : Assignment to constant variable. at index.js:3
+    alert(a);
+    ```
+- let : value is can change.
+    ```js
+    let a = 112;
+    let b = a - 5;
+    a = 10;
+    alert(a); //alert(10)
+    ```
+- var : value is can change. It's replaced let and const.
+    ``` js
+    var a = 112;
+    var b = a - 5;
+    a = 10;
+    alert(a); //alert(10)
+    ```
+- 변수가 바뀌어도 된다 : let, 변수가 바뀌면 안된다 : const
