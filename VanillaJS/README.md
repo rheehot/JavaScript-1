@@ -156,4 +156,4 @@ https://code.visualstudio.com/download
     console.log(daysOfWeek[0]);
     console.log(saveAnotherData);
     ```
-    ![Result](https://ibb.co/m8R2r83)
+    <a href="https://ibb.co/m8R2r83"><img src="https://i.ibb.co/TLw7DLs/It-s-Okay.png" alt="It-s-Okay" border="0" /></a>
