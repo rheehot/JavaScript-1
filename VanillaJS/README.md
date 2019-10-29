@@ -99,18 +99,18 @@ https://code.visualstudio.com/download
 - String : some text save with " ", must in "<<here>>"
     ./index.js
     ``` js
-    const string_test = "hansol_choi";
-    console.log(typeof string_test);
-    const string_test2 = hansol_choi; //Uncaught ReferenceError: hansol_choi is not defined at index.js:2
+    const stringTest = "hansol_choi";
+    console.log(typeof stringTest);
+    const stringTest2 = hansol_choi; //Uncaught ReferenceError: hansol_choi is not defined at index.js:2
     /*hansol_choi 라고 문자를 입력했지만, 이것은 변수 취급을 받게 되고 프로그램은 이를 찾지 못하고 Error를 발생 시키게 된다.*/
     ```
 - Boolean : only have true & false
     ./index.js
     ``` js
-    const bool_test = true;
-    const bool_test2 = false;
-    console.log(typeof bool_test, typeof bool_test2);
-    console.log(bool_test, bool_test2);
+    const boolTest = true;
+    const boolTest2 = false;
+    console.log(typeof boolTest, typeof boolTest2);
+    console.log(boolTest, boolTest2);
     ```
 - Number : int, float
     - int : 1,2,3 .. 100, ..., 10000
