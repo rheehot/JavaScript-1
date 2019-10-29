@@ -135,7 +135,7 @@ https://code.visualstudio.com/download
     console.log(value, value2);
     ```
 
-### Organizing Data with Arrays
+### Step 5. Organizing Data with Arrays
 - Array : Data Save Storage, like a list
 
     ./index.js
@@ -157,3 +157,52 @@ https://code.visualstudio.com/download
     console.log(saveAnotherData);
     ```
     <a href="https://ibb.co/m8R2r83"><img src="https://i.ibb.co/TLw7DLs/It-s-Okay.png" alt="It-s-Okay" border="0" /></a>
+
+### Step 6. Organizing Data with Objects
+- Object : Data Save Storage, Differ to Array is Object have key and value. key is naming to value. Key can fetch a value, this is value's codename.
+
+    ./index.js  
+    ``` js
+   // Create Object
+    const thorrInfo = {
+        name : "Hansol",
+        age : 25,
+        gender : "Male",
+        isStudents : true,
+        favFood: [
+            {
+                name : "Rice",
+                fatty : false
+            },
+            {
+                name : "Burger",
+                fatty : true
+            }
+        ]
+    }
+
+    // check thorrInfo's  Data
+    console.log(thorrInfo);
+
+    // check thorrInfo's Details Data
+    console.log(thorrInfo.age);
+
+    // change thorrInfo's age Data
+    thorrInfo.age = 26
+    console.log(thorrInfo.age)
+
+    // check thorrInfo's Data
+    console.log(thorrInfo)
+
+    // check thorrInfo's Details Array Data
+    console.log(thorrInfo.favFood)
+    console.log(thorrInfo.favFood[0])
+     
+    ```
+
+
+※ [ ] : bracket , { } : curly bracket
+
+[Bracket Wikipedia](https://en.wikipedia.org/wiki/Bracket)
+
+※ JavaScirpt 가 문제라도 HTML/CSS 에는 문제가 없다.

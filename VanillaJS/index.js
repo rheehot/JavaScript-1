@@ -1,15 +1,33 @@
-// not used array
-const mon = "mon";
-const tue = "tue";
-const wen = "wen";
-const tur = "tur";
-const fri = "fri";
-const sat = "sat";
-const sun = "sun";
-// user array
-const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-// save another data type is okay
-const saveAnotherData = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", true, 10,3.141592];
-console.log(daysOfWeek);
-console.log(daysOfWeek[0]);
-console.log(saveAnotherData);
+const thorrInfo = {
+    name : "Hansol",
+    age : 25,
+    gender : "Male",
+    isStudents : true,
+    favFood: [
+        {
+            name : "Rice",
+            fatty : false
+        },
+        {
+            name : "Burger",
+            fatty : true
+        }
+    ]
+}
+
+// check thorrInfo's  Data
+console.log(thorrInfo);
+
+// check thorrInfo's Details Data
+console.log(thorrInfo.age);
+
+// change thorrInfo's age Data
+thorrInfo.age = 26
+console.log(thorrInfo.age)
+
+// check thorrInfo's Data
+console.log(thorrInfo)
+
+// check thorrInfo's Details Array Data
+console.log(thorrInfo.favFood)
+console.log(thorrInfo.favFood[0])
