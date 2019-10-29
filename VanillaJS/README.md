@@ -34,3 +34,18 @@ https://code.visualstudio.com/download
     ``` js
         alert('Test Message');
     ```
+
+### Step 2. Variable (변수)
+- What is Variable?
+    ``` js
+    a = 112; 
+    b = a - 5;
+    alert(b);
+    ```
+- 보다 정확한 표현 방법
+    ``` js
+    let a = 112;
+    let b = a - 5;
+    alert(b);
+    ```
+- 변수의 type은 만들때 한번만 사용한다.
