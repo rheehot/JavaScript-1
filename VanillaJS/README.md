@@ -11,6 +11,7 @@ https://code.visualstudio.com/download
 ### Step 1. Hello World
 - Create index File
     1. index.html
+
     ./index.html
     ``` html
     <!DOCTYPE html>
@@ -26,6 +27,7 @@ https://code.visualstudio.com/download
     </html>
     ```
     2. index.css
+
     ./index.css
     ``` css
     body{
@@ -33,6 +35,7 @@ https://code.visualstudio.com/download
     }
     ```
     3. index.js
+
     ./index.js
     ``` js
         alert('Test Message');
@@ -40,6 +43,7 @@ https://code.visualstudio.com/download
 
 ### Step 2. Variable (변수)
 - What is Variable?
+
     ./index.js
     ``` js
     a = 112; 
@@ -47,6 +51,7 @@ https://code.visualstudio.com/download
     alert(b);
     ```
 - 보다 정확한 표현 방법
+
     ./index.js
     ``` js
     let a = 112;
@@ -57,6 +62,7 @@ https://code.visualstudio.com/download
 
 ### Step 3. More Variable. let, const, var (더 다양한 변수들)
 - const : constant. means stable, not change.
+
     ./index.js
     ``` js
     const a = 112;
@@ -65,6 +71,7 @@ https://code.visualstudio.com/download
     alert(a);
     ```
 - let : value is can change.
+
     ./index.js
     ```js
     let a = 112;
@@ -73,6 +80,8 @@ https://code.visualstudio.com/download
     alert(a); //alert(10)
     ```
 - var : value is can change. It's replaced let and const.
+
+    ./index.js
     ``` js
     var a = 112;
     var b = a - 5;
@@ -84,6 +93,7 @@ https://code.visualstudio.com/download
 ### Step 4. Data Types on JS
 - console.log : console.log명령을 통해 결과를 확인할 것인데 이는 각 브라우저(Chrome, Internet Explorer 등등..)에서 F12를 눌러 Console 탭을 눌러서 이동 내용을 확인한다.
 - comment : maens note. code explanation.
+
     ./index.js 
     ``` js
     // to do : finish this
@@ -97,6 +107,7 @@ https://code.visualstudio.com/download
     const test = "nothing";
     ```
 - String : some text save with " ", must in "<<here>>"
+
     ./index.js
     ``` js
     const stringTest = "hansol_choi";
@@ -105,6 +116,7 @@ https://code.visualstudio.com/download
     /*hansol_choi 라고 문자를 입력했지만, 이것은 변수 취급을 받게 되고 프로그램은 이를 찾지 못하고 Error를 발생 시키게 된다.*/
     ```
 - Boolean : only have true & false
+
     ./index.js
     ``` js
     const boolTest = true;
@@ -125,6 +137,8 @@ https://code.visualstudio.com/download
 
 ### Organizing Data with Arrays
 - Array : Data Save Storage, like a list
+
+    ./index.js
     ``` js
     // not use array
     const mon = "mon";
