@@ -206,3 +206,31 @@ https://code.visualstudio.com/download
 [Bracket Wikipedia](https://en.wikipedia.org/wiki/Bracket)
 
 ※ JavaScirpt 가 문제라도 HTML/CSS 에는 문제가 없다.
+
+### Step 7. What is Function?
+함수는 자주 사용되는 코드를 조각화해서 편하게 사용하기 위해 만든다고 이해하면 편하다.
+붕어빵을 매번 모양을 만들어서 하는 것보다 판을 만들어서 찍어내는게 빠른 것 처럼.
+```javascript
+function sayHello(){
+    console.log('hello!');
+}
+
+sayHello()
+```
+
+|Built-In Function vs User Define Function|
+|---|
+|ex) console.log("Hello") vs function sayHello() { ~~~ } |
+
+customize sayHello Function
+```javascript
+function sayHello(name, age){
+    console.log('Hello!', name);
+    console.log('Your age is', age);
+}
+sayHello("Thorr", 25);
+```
+
+Hello! Thorr
+
+Your age is 25
