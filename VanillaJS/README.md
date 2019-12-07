@@ -234,3 +234,40 @@ sayHello("Thorr", 25);
 Hello! Thorr
 
 Your age is 25
+
+### Step 8. More Functional Function
+함수는 어떤 기능을 하는 것이기 때문에 값을 돌려주는 절차가 있고, 그 절차를 return 이라고 한다. 어떠한 변수를 통해 기능을 동작시키고 그것을 동작시키는 절차로 주로 동작한다.
+
+\`<이 내부에 작성되는 문자열은 그대로 작성되고 ${변수명}으로 작성된 것은 변수에 담긴 내용이 표헌되며 \n 같은 예약어들이 동작된다. >\`
+```javascript
+function sayHello(name, age){
+    return `Hello ${name}!\nYour age is ${age}`
+}
+
+const myText = sayHello("Thorr", 25)
+
+console.log(myText)
+```
+
+함수의 활용은 여기에서 그치지 않고 객체 안에 함수를 넣을 수도 있다.
+```javascript
+const calculator = {
+    plus: function(a, b){
+        return a+b;
+    },
+    minus: (a,b) => {
+        return a-b;
+    },
+    absoluteValue: (a) =>{
+        return a>0?a:-a
+    }
+}
+
+const plusResult = calculator.plus(10,5)
+const minusResult = calculator.minus(5,10)
+const absoluteResult = calculator.absoluteValue(-5)
+
+console.log(plusResult,minusResult,absoluteResult)
+```
+각각의 결과가 15, -5, 5로 나온다.
+
