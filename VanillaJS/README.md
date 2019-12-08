@@ -271,3 +271,11 @@ console.log(plusResult,minusResult,absoluteResult)
 ```
 각각의 결과가 15, -5, 5로 나온다.
 
+### Step 9. JS DOM Functions
+JS 파일에서 html의 구조를 바꿀 수 있다. 
+기존의 This is Working의 내용이 Hi! From JS FILE 로 바뀐 것을 확인할 수 있는 실습이다.
+```javascript
+const title = document.getElementById("title");
+title.innerHTML = "Hi! From JS FILE"
+```
+<a href="https://ibb.co/yqQx5xt"><img src="https://i.ibb.co/TtgNRN6/image.png" alt="image" border="0" /></a>
