@@ -272,10 +272,39 @@ console.log(plusResult,minusResult,absoluteResult)
 각각의 결과가 15, -5, 5로 나온다.
 
 ### Step 9. JS DOM Functions
-JS 파일에서 html의 구조를 바꿀 수 있다. 
+JS 파일에서 html의 DOM 구조를 바꿀 수 있다. 
 기존의 This is Working의 내용이 Hi! From JS FILE 로 바뀐 것을 확인할 수 있는 실습이다.
 ```javascript
 const title = document.getElementById("title");
 title.innerHTML = "Hi! From JS FILE"
 ```
 <a href="https://ibb.co/yqQx5xt"><img src="https://i.ibb.co/TtgNRN6/image.png" alt="image" border="0" /></a>
+
+### Step 10. Modifying the DOM with JS
+DOM 구조 내부에 다양한 것들이 존재하고 이것들에 대해 접근할 수 있는 많은 함수들이 document 안에 담겨있다. 매우 많기 때문에 간단한 것들을 실습하고, 나머지의 것들은 찾아서 사용할 필요가 있어 보인다.
+index.htm 구조
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Something</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <h1 id="title">This is Working</h1>
+        <p id="test">
+                
+        </p>
+        <script src="./index.js"></script>
+    </body>
+</html>
+```
+index.js 구조 
+```javascript
+const title = document.querySelector("#title");
+title.innerHTML = "Hi! From JS FILE"
+document.title = 'wow'
+document.getElementById("test").innerHTML = "insert text in index.js"
+```
+위의 소스를 보면 이해하겠지만, html 내부에서 사용된 내용은 없고, js 파일 안에서 변경시킨 내용이 반영되있음을 알 수 있다.
+<a href="https://ibb.co/WkSptzx"><img src="https://i.ibb.co/1rHJ6Xv/image.png" alt="image" border="0" /></a>
