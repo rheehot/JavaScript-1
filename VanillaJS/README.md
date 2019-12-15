@@ -308,3 +308,24 @@ document.getElementById("test").innerHTML = "insert text in index.js"
 ```
 위의 소스를 보면 이해하겠지만, html 내부에서 사용된 내용은 없고, js 파일 안에서 변경시킨 내용이 반영되있음을 알 수 있다.
 <a href="https://ibb.co/WkSptzx"><img src="https://i.ibb.co/1rHJ6Xv/image.png" alt="image" border="0" /></a>
+
+### Step 11. Event and Event Handler
+Event 라고 하는 것은 어떠한 행위로 인해 발생하는 것을 의미한다.
+Event Handler는 Event 발생을 감지하고, 그로 인해 수행하는 역할을 하는 역할이다.
+```javascript
+const title = document.querySelector("#title");
+let status = 0; // 전역에다 변수 하나를 선언하고 이를 통해 값을 제어하게 만듬
+
+function handleClick(event){
+    status += 1;
+    // 클릭시 홀수로 바뀌니 홀수 일때는 파랑, 한번 더 클릭시에는 하얀색으로 되게끔 
+    if(status % 2 == 1){
+        title.style.color = "blue";
+    } else {
+        title.style.color = "white";
+    }
+}
+
+title.addEventListener("click", handleClick);   
+```
+이렇게 작성한 뒤 title을 클릭해서 어떻게 바뀌는 지 확인하자.
