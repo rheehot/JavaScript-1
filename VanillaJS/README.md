@@ -329,3 +329,78 @@ function handleClick(event){
 title.addEventListener("click", handleClick);   
 ```
 이렇게 작성한 뒤 title을 클릭해서 어떻게 바뀌는 지 확인하자.
+
+### Step 12. JS Function practice with classList, toggle
+
+
+**classList**
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Something</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <h1 id="title" class="btn">This is Working</h1>
+        <script src="./index.js"></script>
+    </body>
+</html>
+```
+```css
+body{
+    background-color:powderblue;
+}
+
+h1 {
+    color:#34495e;
+    transition: color 0.5s ease-in-out;
+}
+
+.btn {
+    cursor: pointer;
+}
+.clicked{
+    color: #7f8c8d;
+}
+```
+transition : color 0.5s ease-in-out 부분은 애니메이션 효과를 주기 위함이다.
+``` javascript
+const title = document.querySelector("#title");
+
+const CLICKED_CLASS = "clicked";
+
+function handleClick(){
+    const hasClass = title.classList.contains(CLICKED_CLASS);
+    if(!hasClass){
+        title.classList.add(CLICKED_CLASS);
+    } else {
+        title.classList.remove(CLICKED_CLASS);
+    }
+}
+
+function init(){
+    title.addEventListener("click", handleClick);
+}
+
+init();
+```
+위의 실습을 통해서 클래스의 이름이 중복되어 삭제되는 일이 없고, 이를 통해서 클릭시 색이 계속해서 변하는 페이지를 만들었다.
+
+바로 위의 자바스크립트 코드는 매우 긴데 이를 아주 짧게 동작시키는 방법이 있다. 아래 소스로 바꾸어 실행해보자.
+```javascript
+const title = document.querySelector("#title");
+
+const CLICKED_CLASS = "clicked";
+
+function handleClick(){
+    title.classList.toggle(CLICKED_CLASS);
+}
+
+function init(){
+    title.addEventListener("click", handleClick);
+}
+
+init();
+```
+위의 기능과 동일하게 동작한다. 그렇다면 toggle의 매커니즘은 classList의 add와 remove를 사용하는 방법과 같다는 것이다.
