@@ -1,0 +1,49 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+    각 브라우저마다 초기값을 가지고 있기 때문에,
+    초기화를 하고 시작을 해야하기 때문에 .body 에서 값을 지워준다. 
+*/
+
+.header {
+    background-color : #ffffff;
+    border-bottom: 1px solid grey;
+}
+
+.container{
+    width : 980px;
+    margin : auto;
+    padding : 20px 0
+}
+
+.container-left{
+    
+}
+
+.logo {
+    float: left;
+    margin-right : 5px
+}
+
+.logo img {
+    display: block;
+}
+
+.menu {
+    float: left;
+}
+
+.menu-item {
+    float: left;
+    padding: 8px 10px;
+}
+
+/* :: , 가상 요소 선택자 */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
