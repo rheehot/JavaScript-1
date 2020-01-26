@@ -16,11 +16,10 @@
 .container{
     width : 980px;
     margin : auto;
-    padding : 20px 0
 }
 
 .container-left{
-    
+    padding : 20px 0;    
 }
 
 .logo {
